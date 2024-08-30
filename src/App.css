@@ -1,0 +1,244 @@
+body {
+  @apply font-ffp;
+}
+
+.containerr {
+  @apply flex flex-col justify-center items-center px-6 py-8 330:h-screen;
+}
+
+.flexx {
+  @apply flex flex-col gap-4;
+}
+
+nav {
+  @apply mb-4;
+}
+
+.toggleNumber1 {
+  @apply flex justify-end gap-3 pr-1 font-bold text-white text-sm;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.toggleNumber2 {
+  @apply flex justify-end gap-3 pr-1 font-bold text-Verydarkgrayishyellow text-sm;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.toggleNumber3 {
+  @apply flex justify-end gap-3 pr-1 font-bold text-Lightyellow text-sm;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.navWrapper {
+  @apply flex justify-between items-center;
+}
+
+.navWrapper h1 {
+  @apply font-bold text-2xl;
+}
+
+.navWrapper1 {
+  @apply text-white;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.navWrapper2 {
+  @apply text-Verydarkgrayishyellow;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.navWrapper3 {
+  @apply text-Lightyellow;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.theme {
+  @apply flex items-center gap-6 -mb-2;
+}
+
+.theme p {
+  @apply font-bold text-0.75;
+}
+
+.toggleTheme {
+  @apply flex items-center p-1 w-14 bg-Verydarkdesaturatedblue2 rounded-full;
+}
+.toggleButtonAnim1 {
+  @apply p-0.4 bg-Red hover:bg-lightRed transition ease-in-out delay-75 rounded-full;
+  animation-name: tba1;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tba1 {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+
+.toggleButtonAnim2 {
+  @apply p-0.4 bg-Orange hover:bg-lightOrange transition ease-in-out delay-75 rounded-full;
+  animation-name: tba2;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tba2 {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(1rem);
+  }
+}
+
+.toggleButtonAnim3 {
+  @apply p-0.4 bg-Purecyan hover:bg-Softcyan transition ease-in-out delay-75 rounded-full;
+  animation-name: tba3;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tba3 {
+  from {
+    transform: translateX(1rem);
+  }
+  to {
+    transform: translateX(2.2rem);
+  }
+}
+
+.displayNumber {
+  @apply flex justify-end font-bold text-white text-5xl px-6 py-8 rounded-lg;
+}
+
+.numberInside {
+  @apply flex justify-end font-bold text-white text-5xl p-6 bg-Verydarkdesaturatedblue3 rounded-lg;
+}
+
+.gridWrapper {
+  @apply grid grid-cols-4 gap-x-4 gap-y-5 p-6 rounded-lg;
+}
+
+.resetButton {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.equalsButton {
+  grid-area: 5 / 3 / 6 / 5;
+}
+
+/*  */
+
+.bg1 {
+  @apply bg-Verydarkdesaturatedblue1;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.bg2 {
+  @apply bg-Lightgray;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.bg3 {
+  @apply bg-Verydarkviolet1;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeInput1 {
+  @apply bg-Verydarkdesaturatedblue3;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeInput2 {
+  @apply bg-Verylightgray;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeInput3 {
+  @apply bg-Verydarkviolet2;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeText1 {
+  @apply text-white;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeText2 {
+  @apply text-Verydarkgrayishyellow;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeText3 {
+  @apply text-Lightyellow;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeCalc1 {
+  @apply bg-Verydarkdesaturatedblue2;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeCalc2 {
+  @apply bg-Grayishred;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.themeCalc3 {
+  @apply bg-Verydarkviolet2;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.primaryButton1 {
+  @apply font-bold text-32 text-Verydarkgrayishblue px-2 py-0 bg-Lightgrayishorange hover:bg-white transition ease-in-out delay-150 rounded-lg shadow-shadowButPrimary1;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.primaryButton1 {
+  @apply font-bold text-32 text-Verydarkgrayishblue px-3 py-0 bg-Lightgrayishorange hover:bg-white transition ease-in-out delay-150 rounded-lg shadow-shadowButPrimary1;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.primaryButton2 {
+  @apply font-bold text-32 text-Verydarkgrayishyellow px-3 py-0 bg-Lightgrayishyellow hover:bg-white transition ease-in-out delay-150 rounded-lg shadow-shadowButPrimary2;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.primaryButton3 {
+  @apply font-bold text-32 text-Lightyellow px-3 py-0 bg-Verydarkviolet hover:bg-lightViolet transition ease-in-out delay-150 rounded-lg shadow-shadowButPrimary3;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.secondaryButton1 {
+  @apply font-bold text-xl text-white 460:px-5 360:px-3 py-0 bg-Desaturateddarkblue1 hover:bg-lightBlue transition ease-in-out delay-150 rounded-lg shadow-shadowButSecondary1;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.secondaryButton2 {
+  @apply font-bold text-xl text-white 460:px-5 360:px-3 py-0 bg-Darkmoderatecyan hover:bg-lightCyan transition ease-in-out delay-150 rounded-lg shadow-shadowButSecondary2;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.secondaryButton3 {
+  @apply font-bold text-xl text-white 460:px-5 360:px-3 py-0 bg-Darkviolet hover:bg-lightVividMagenta transition ease-in-out delay-150 rounded-lg shadow-shadowButSecondary3;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.thirdButton1 {
+  @apply font-bold text-2xl text-white px-5 py-2 bg-Red hover:bg-lightRed transition ease-in-out delay-150 rounded-lg shadow-shadowButThird1;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.thirdButton2 {
+  @apply font-bold text-2xl text-white px-5 py-2 bg-Orange hover:bg-lightOrange transition ease-in-out delay-150 rounded-lg shadow-shadowButThird2;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
+
+.thirdButton3 {
+  @apply font-bold text-2xl text-black px-5 py-2 bg-Purecyan hover:bg-Softcyan transition ease-in-out delay-150 rounded-lg shadow-shadowButThird3;
+  transition: background-color 0.3s ease-out, color 0.5s ease;
+}
